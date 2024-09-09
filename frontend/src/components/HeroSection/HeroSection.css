@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.landing-page-hero { /* Style the hero section */
+    background-color: #004c80; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative; 
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 { /* Apply slide-in animation to the h1 within hero-content */
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0; 
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+/* Corner elements (adjust as needed) */
+.landing-page-hero::before, 
+.landing-page-hero::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #66ff33;
+    width: 15%;
+    height: 25%;
+}
+
+.landing-page-hero::before {
+    top: 12%;
+    left: 15%;
+    border-right: none;
+    border-bottom: none;
+}
+
+.landing-page-hero::after {
+    bottom: 12%;
+    right: 15%;
+    border-left: none;
+    border-top: none;
+}
+.hero-content button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px; 
+}
+
+.hero-content button:hover {
+    background-color: #0056b3; 
+}
