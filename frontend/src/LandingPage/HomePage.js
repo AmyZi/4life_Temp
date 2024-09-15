@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
-import Hero from '../BodySection/HeroSection/Hero';
-import Features from '../BodySection/Features/Features';
+import Hero from '../Home/Hero';
+import Body from '../Home/BodySection';
 import Footer from '../Footer/Footer';
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
       <Header />
       <main>
         <Hero />
-        <Features />
+        <Body />
       </main>
       <Footer />
     </div>

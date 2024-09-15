@@ -3,7 +3,7 @@ body {
     font-family: sans-serif;
 }
 
-.landing-page-hero { /* Style the hero section */
+.landing-page-hero { 
     background-color: #004c80; 
     color: white;
     display: flex;
@@ -11,15 +11,48 @@ body {
     align-items: center;
     min-height: 100vh;
     position: relative; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .hero-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    z-index: 1;
 }
 
-.hero-content h1 { /* Apply slide-in animation to the h1 within hero-content */
+.hero-content h1 {
     animation: slideIn 1s ease-out forwards;
     opacity: 0; 
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.hero-content .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .cta-button:hover {
+    background-color: #0056b3; 
 }
 
 @keyframes slideIn {
@@ -41,6 +74,7 @@ body {
     border: 2px solid #66ff33;
     width: 15%;
     height: 25%;
+    z-index: 0;
 }
 
 .landing-page-hero::before {
@@ -56,18 +90,15 @@ body {
     border-left: none;
     border-top: none;
 }
-.hero-content button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 50px; 
-}
 
-.hero-content button:hover {
-    background-color: #0056b3; 
+@media (max-height: 600px) or (max-width: 600px) {
+    .hero-content {
+        transform: scale(0.8);
+    }
+    
+    .landing-page-hero::before, 
+    .landing-page-hero::after {
+        width: 10%;
+        height: 20%;
+    }
 }

@@ -1,7 +1,6 @@
-// src/components/Features.js
 import React from 'react';
 
-function Features() {
+function Body() {
   return (
     <section className="features">
       <h2>Why Choose 4Life Mentorship?</h2>
@@ -23,4 +22,4 @@ function Features() {
   );
 }
 
-export default Features;
+export default Body;
