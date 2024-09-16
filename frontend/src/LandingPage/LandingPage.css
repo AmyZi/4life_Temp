@@ -102,3 +102,9 @@ body {
         height: 20%;
     }
 }
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px; 
+  }

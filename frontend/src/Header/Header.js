@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     },
 
     navItem: {
-        marginLeft: '20px',
+        marginLeft: '10px',
     },
 
     dropdown: {
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
     showDropdown: {
         display: 'block',
     }
+    
 });
 
 function Header() {
