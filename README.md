@@ -8,7 +8,7 @@ Enter 4Life, the revolutionary mentorship web application that's set to transfor
 **_At 4Life success is a journey best shared together._**
 
 
-Authors: Amina Idris, Jumoke Kazeem, Ado Abdullateef
+Authors: Amina Abh, Jumoke Kazeem, Ado Abdullateef
 
 **Inspirations**
 
